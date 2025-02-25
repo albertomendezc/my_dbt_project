@@ -1,6 +1,7 @@
 SELECT oi.order_id,
     order_item_id, 
     total_order_item_amount,
+    4 AS column4,
     item_quantity,
     product_id,
     o.user_id,
