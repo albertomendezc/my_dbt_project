@@ -26,3 +26,15 @@ sources:
       - name: order_item
       - name: seller
       - name: user
+  - name: cas_final
+    schema: cas_final
+    tables:
+      - name: src_brands
+      - name: src_categories
+      - name: src_customers
+      - name: src_order_items
+      - name: src_orders
+      - name: src_products
+      - name: src_staffs
+      - name: src_stocks
+      - name: src_stores
