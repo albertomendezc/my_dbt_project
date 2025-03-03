@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: mrt_sales
+    description: "This model showcases the sales of Localbike"
+    columns:
+      - name: order_id
+        description: "Unique identifier of the order"
+        tests:
+            - unique
+            - not_null
+      - name: total_order_price
+        description: "Total value of the order"
+      - name: order_date
+        description: "Date when the order was placed"
+      - name: city
+        description: "Location of the customer"
+      - name: customer_name
+        description: "Full name of the customer"
