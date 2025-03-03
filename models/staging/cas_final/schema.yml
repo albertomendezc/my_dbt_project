@@ -48,7 +48,7 @@ models:
       - name: product_id
         description: "Unique identifier of the product"
       - name: quantity
-        description: 
+        description: "Amount of items by product id"
       - name: list_price
         description: "Price indicated in the catalogue"
       - name: discount
@@ -77,7 +77,6 @@ models:
         description: "Unique identifier of the store"
       - name: staff_id
         description: "Unique identifier of the staff"
-      
   
   - name: stg_products
     description: "This model contains information about customers"
@@ -99,7 +98,7 @@ models:
     description: "This model contains information about customers"
     columns:
       - name: staff_id
-        description:
+        description: "Unique identifier fo staff personnel"
         tests:
             - unique
             - not_null

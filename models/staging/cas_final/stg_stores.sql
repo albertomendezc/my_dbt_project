@@ -4,4 +4,4 @@ SELECT
     city,
     state,
     zip_code
-FROM {{ source('cas_final', 'stores') }}
+FROM {{ source('cas_final', 'src_stores') }}

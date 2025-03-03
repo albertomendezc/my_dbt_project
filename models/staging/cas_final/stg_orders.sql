@@ -7,4 +7,4 @@ SELECT
     shipped_date,
     store_id,
     staff_id
-FROM {{ source('orders', 'brands') }}
+FROM {{ source('cas_final', 'src_brands') }}

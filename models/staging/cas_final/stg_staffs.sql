@@ -4,4 +4,4 @@ SELECT
     active,
     store_id,
     manager_id
-FROM {{ source('cas_final', 'staffs') }}
+FROM {{ source('cas_final', 'src_staffs') }}
