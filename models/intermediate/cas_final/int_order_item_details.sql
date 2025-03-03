@@ -12,8 +12,11 @@ SELECT
     prd.category_id,
     prd.model_year,
     cat.category_name,
-    brands.brand_name
+    brands.brand_name,
+    orders.order_date
 FROM {{ ref('stg_order_items') }} AS ori
 LEFT JOIN {{ ref('stg_products') }} prd ON ori.product_id = prd.product_id
 LEFT JOIN {{ ref('stg_categories') }} AS cat ON prd.category_id = cat.category_id
 LEFT JOIN {{ ref('stg_brands') }} AS brands ON prd.brand_id = brands.brand_id
+LEFT JOIN {{ ref('stg_orders') }} AS orders ON orders.order_id = ori.order_id
+
