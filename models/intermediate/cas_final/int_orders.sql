@@ -1,4 +1,4 @@
-SELECT
+SELECT DISTINCT
     ord.order_id,
     ord.customer_id,
     ord.order_status,
@@ -13,5 +13,5 @@ SELECT
     cus.zip_code,
     oitems.total_order_price
 FROM {{ ref('stg_orders') }} AS ord
-LEFT JOIN {{ ref('stg_customers') }} AS cus ON cus.customer_id = ord.customer_id
-LEFT JOIN {{ ref('stg_order_items') }} AS oitems ON oitems.order_id = ord.order_id
+INNER JOIN {{ ref('stg_customers') }} AS cus ON cus.customer_id = ord.customer_id
+INNER JOIN {{ ref('stg_order_items') }} AS oitems ON oitems.order_id = ord.order_id
