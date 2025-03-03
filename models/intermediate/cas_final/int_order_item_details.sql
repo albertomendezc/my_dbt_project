@@ -11,7 +11,6 @@ SELECT
     prd.brand_id,
     prd.category_id,
     prd.model_year,
-    prd.list_price,
     cat.category_name,
     brands.brand_name
 FROM {{ ref('stg_order_items') }} AS ori
