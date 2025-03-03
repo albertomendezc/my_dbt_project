@@ -5,6 +5,6 @@ SELECT
     quantity,
     list_price,
     discount,
-    list_price * discount AS final_price,
-    SUM(list_price * discount) OVER (PARTITION BY order_id) AS total_order_price
+    ROUND(list_price * discount,2) AS final_price,
+    ROUND(SUM(list_price * discount) OVER (PARTITION BY order_id),2) AS total_order_price
 FROM {{ source('cas_final', 'src_order_items') }}
