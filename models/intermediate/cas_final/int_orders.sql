@@ -12,6 +12,6 @@ SELECT
     cus.state,
     cus.zip_code,
     oitems.total_order_price
-FROM {{ ref('orders') }} AS ord
-LEFT JOIN {{ ref('customers') }} AS cus ON cus.customer_id = ord.customer_id
-LEFT JOIN {{ ref('order_items') }} AS oitems ON oitems.order_id = ord.order_id
+FROM {{ ref('stg_orders') }} AS ord
+LEFT JOIN {{ ref('stg_customers') }} AS cus ON cus.customer_id = ord.customer_id
+LEFT JOIN {{ ref('stg_order_items') }} AS oitems ON oitems.order_id = ord.order_id
