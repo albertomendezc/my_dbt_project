@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: int_order_item_details
+    description: "All details about each order"
+  - name: int_orders
+    description: "General information about orders"
+  - name: int_product_category
+    description: "This model showcases the sales of Localbike"
+  - name: int_staff_location
+    description: "This model showcases the sales of Localbike"
+  - name: int_store_stock
+    description: "This model showcases the sales of Localbike"
