@@ -1,4 +1,4 @@
-SELECT
+SELECT DISTINCT
   order_id,
   total_order_price,
   order_date,
