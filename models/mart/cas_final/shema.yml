@@ -17,3 +17,5 @@ models:
         description: "Location of the customer"
       - name: customer_name
         description: "Full name of the customer"
+      - name: country
+        description: "Name of the country"
