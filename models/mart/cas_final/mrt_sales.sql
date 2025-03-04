@@ -1,7 +1,6 @@
 SELECT DISTINCT
   order_id,
   total_order_price,
-  list_price,
   order_date,
   city,
   state,
